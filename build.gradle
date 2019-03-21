@@ -1,0 +1,18 @@
+plugins {
+    id 'java'
+}
+
+group 'SMSService'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile("org.springframework.boot:spring-boot-starter-web:1.5.10.RELEASE")
+    compile group: 'org.jsmpp', name: 'jsmpp', version: '2.2.1'
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
